@@ -164,6 +164,7 @@ class DesktopEntry:
         self.exec_file = ""
         self.filename = ""
         self.dryrun = dryrun
+        self.category = "" 
 
     def write(self):
         """Write desktop entry"""
@@ -183,6 +184,7 @@ class DesktopEntry:
             f.write("[Desktop Entry]\n")
             f.write("Name=%s\n" % self.name)
             f.write("Type=%s\n" % self._type)
+            f.write("Categories=%s;\n" % self.category)
             if self.terminal:
                 f.write("Terminal=true\n")
             else:

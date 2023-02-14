@@ -130,6 +130,7 @@ def create_desktop_entry(script, descr, metadata={}, dryrun=False):
     else:
         entry.name = descr
     entry.exec_file = "%s" % script_filename
+    entry.category = metadata["category"]
     entry.write()
 
     return entry
