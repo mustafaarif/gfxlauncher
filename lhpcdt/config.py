@@ -88,7 +88,7 @@ class GfxConfig(object):
         self.applications_dir = "/home/bmjl/test-menu/share/applications"
         self.directories_dir = "/home/bmjl/test-menu/share/desktop-directories"
         self.menu_dir = "/home/bmjl/test-menu/etc/xdg/menus/applications-merged"
-        self.menu_filename = "Lunarc-On-Demand.menu"
+        self.menu_filename = "PDC-Apps.menu"
         self.help_url = ""
         self.browser_command = "firefox"
 
